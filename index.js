@@ -15,11 +15,11 @@ app.get("/", (req, res) => {
   res.send("Task Manager API Running");
 });
 
-app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/auth", require("./routes/authroutes"));
 
-app.use("/api/projects", require("./routes/projectRoutes"));
+app.use("/api/projects", require("./routes/projectroutes"));
 
-app.use("/api/tasks", require("./routes/taskRoutes"));
+app.use("/api/tasks", require("./routes/taskroutes"));
 
 app.use("/api/dashboard", require("./routes/dashboardroute"));
 
